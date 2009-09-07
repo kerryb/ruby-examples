@@ -2,13 +2,13 @@
   puts a
 end
 
-exit
+puts '--------'
 
 ['foo', 'bar', 'wibble'].each_with_index do |value, index|
   puts "The element at position #{index} is #{value}"
 end
 
-exit
+puts '--------'
 
 {1 => 'one', 2 => 'two', 'foo' => 'bar'}.each_pair do |key, value|
   puts "The value of #{key} is #{value}"

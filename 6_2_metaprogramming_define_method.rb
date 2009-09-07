@@ -12,8 +12,6 @@ foo.foo
 foo.bar
 foo.wibble
 
-exit
-
-p Foo.instance_methods false
+p Foo.instance_methods(false)
 
 foo.bang
