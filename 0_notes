@@ -1,0 +1,35 @@
+Dynamic typing vs dynamic execution
+  Dynamic != weak
+  Everything is an object
+  Duck typing
+Blocks
+Iterators
+  External v internal
+  each, each_with_index, each_pair
+  Enumerable
+    Provide each and make sure elemente implement <=>
+    Gives include?, any?, all?, size, sort etc
+    Example: portfolio of accounts
+Modules
+  Comparable
+Open classes
+Metaprogramming
+  eval
+  define_method
+  attr_*
+  Method missing
+    Proxy
+    Magic methods (find_by...)
+DSLs
+  Internal/external
+  Rake
+  ActiveRecord
+Patterns:
+  Strategy (blocks)
+  Proxy (method_missing)
+  Decorator (Forwardable, alias_method_chain)
+  Singleton
+  Abstract factory (const_get):w
+  Builder (XML::Builder)
+Convention over configuration
+  Rails (ActiveRecord, routes, templates)
