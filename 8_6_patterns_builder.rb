@@ -1,6 +1,6 @@
 require 'builder'
 
-xml = Builder::XmlMarkup.new :indent => 2
+xml = Builder::XmlMarkup.new :target => $stdout, :indent => 2
 
 xml.widgets do
   (1..3).each do |n|
@@ -10,5 +10,3 @@ xml.widgets do
     end
   end
 end
-
-puts xml.to_s
