@@ -8,7 +8,7 @@ require 'cucumber/rake/task'
 require 'redcloth'
 
 $:.unshift(File.dirname(__FILE__) + '/../../lib')
- 
+
 GEM = "fakettp"
 GITHUB_USER = "kerryb"
 GEM_VERSION = "0.2.4.1"
@@ -16,7 +16,7 @@ SUMMARY = "HTTP server mocking tool"
 AUTHOR = "Kerry Buckley"
 EMAIL = "kerryjbuckley@gmail.com"
 HOMEPAGE = "http://github.com/#{GITHUB_USER}/#{GEM}/"
- 
+
 spec = Gem::Specification.new do |s|
   s.name = GEM
   s.version = GEM_VERSION
@@ -30,7 +30,7 @@ spec = Gem::Specification.new do |s|
   s.add_development_dependency('RedCloth', '>=4.1.1')
   s.require_paths = ['lib']
   s.files = FileList['lib/**/*', 'bin/**/*', 'README.html'].to_a
-  s.executables = %w(fakettp)  
+  s.executables = %w(fakettp)
   s.author = AUTHOR
   s.email = EMAIL
   s.homepage = HOMEPAGE
@@ -82,12 +82,12 @@ namespace :gem do
   task :install => [:make_spec, :repackage, :uninstall] do
     sh %{sudo gem install -l pkg/#{GEM}-#{GEM_VERSION}}
   end
-  
+
   desc 'Remove all installed versions of gem'
   task :uninstall do
     system %{sudo gem uninstall -xa #{GEM} #{GITHUB_USER}-#{GEM}}
   end
-  
+
   desc 'Revert to the public gem'
   task :revert => :uninstall do
     system %{sudo gem install #{GITHUB_USER}-#{GEM}}
