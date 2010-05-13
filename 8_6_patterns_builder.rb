@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'builder'
 
 xml = Builder::XmlMarkup.new :target => $stdout, :indent => 2
