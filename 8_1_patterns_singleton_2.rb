@@ -1,3 +1,5 @@
+# Ruby provides a Singleton module that does it for us
+
 require 'singleton'
 
 class SingletonTwo

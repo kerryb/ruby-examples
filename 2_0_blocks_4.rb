@@ -1,3 +1,5 @@
+# Parameterised yield
+
 def block_demo_2
   puts 'Beginning of method'
   yield 'block_demo_2'

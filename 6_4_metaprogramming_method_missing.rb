@@ -1,3 +1,5 @@
+# Intercepting calls to non-existent methods
+
 class MethodPrinter
   def method_missing name, *args
     puts "You called #{name}(#{args.join ', '})"

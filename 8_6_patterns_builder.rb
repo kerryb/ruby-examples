@@ -1,3 +1,5 @@
+# XML builder example (doesn't work when executed in vim, for some reason)
+
 require 'rubygems'
 require 'builder'
 

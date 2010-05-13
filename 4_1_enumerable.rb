@@ -1,3 +1,10 @@
+# Using the Enumerable module. Note how we get sort and select (and many
+# others) for free by implementing each on the collection and <=> on
+# the member class.
+#
+# As an aside, note also how we can print a structured view of the collection
+# by implementing inspect, which is called by p
+
 class Book
   attr_reader :author, :title
 

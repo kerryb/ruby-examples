@@ -1,3 +1,6 @@
+# The ActiveRecord DSL from Rails. Note the declarative relationships and
+# constraints (has_many etc), which are actually class methods.
+
 class Forum < ActiveRecord::Base
   has_many :topics, :dependent => :destroy
   has_many :forum_subscriptions, :dependent => :destroy

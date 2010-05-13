@@ -1,3 +1,5 @@
+# Type these into irb and see what happens
+
 'foo'.class
 1.class
 'foo' + 2 # => TypeError

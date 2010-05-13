@@ -1,3 +1,5 @@
+# Defining methods dynamically when creating (or modifying) a class
+
 class Foo
   ['foo', 'bar', 'wibble'].each do |name|
     define_method name do

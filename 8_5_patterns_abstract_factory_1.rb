@@ -1,3 +1,5 @@
+# Classic abstract factory
+
 class HttpReader;end
 class FileReader;end
 class FtpReader;end

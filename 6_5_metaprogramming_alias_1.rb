@@ -1,3 +1,5 @@
+# Aliasing a method
+
 class String
   alias_method :big_letters, :upcase
 end

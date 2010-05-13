@@ -1,3 +1,5 @@
+# Implementing strategy pattern using blocks
+
 class Context
   def initialize(strategy)
     @strategy = strategy

@@ -1,3 +1,5 @@
+# Adding a method to a core class
+
 class Fixnum
   def cubed
     self ** 3

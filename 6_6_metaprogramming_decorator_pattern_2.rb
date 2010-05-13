@@ -1,3 +1,8 @@
+# Decorator pattern using method aliasing. To decorate a logger, just
+# tell it to include the decorating module. This is just demonstrating
+# how to use method aliasing, not necessarily a suggested approach to
+# implementing decorators.
+
 class Logger
   def log message
     puts message

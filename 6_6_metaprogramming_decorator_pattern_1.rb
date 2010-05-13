@@ -1,3 +1,5 @@
+# Classic decorator pattern (no clever dynamic tricks here)
+
 class Logger
   def log message
     puts message

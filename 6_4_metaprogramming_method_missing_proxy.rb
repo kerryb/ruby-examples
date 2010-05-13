@@ -1,3 +1,6 @@
+# A proxy class using method_missing, which logs all calls to the proxied
+# object
+
 class Proxy
   def initialize obj
     @proxied_object = obj

@@ -1,3 +1,5 @@
+# Implementing a singleton by hiding the new method
+
 class SingletonOne
   @@instance = new
 

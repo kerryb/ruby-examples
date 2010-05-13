@@ -1,3 +1,5 @@
+# Classic strategy pattern using explicit classes (non-idiomatic)
+
 class Context
   def initialize(strategy)
     @strategy = strategy

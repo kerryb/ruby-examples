@@ -1,3 +1,5 @@
+# Using internal iterators (as opposed to external for loops)
+
 [1, 2, 3].each do |a|
   puts a
 end

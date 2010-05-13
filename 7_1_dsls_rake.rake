@@ -1,3 +1,6 @@
+# An example of the Rake build tool DSL. Note how much of it reads like
+# configuration, but is all valid ruby.
+
 require 'rubygems'
 require 'rubygems/specification'
 require 'rake'
